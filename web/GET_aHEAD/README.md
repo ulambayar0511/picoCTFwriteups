@@ -1,30 +1,27 @@
 # GET aHEAD
--------------------------------------------
+
+***
+
 ## Description
 
-```Find the flag being held on this server to get ahead of the competition ```
-- http://mercury.picoctf.net:47967/
+`Find the flag being held on this server to get ahead of the competition`
 
-Даалгаварын нэрийг харвал *GET aHEAD* буюу http request method-той холбоотой байж болох санаа төрсөн.
+* http://mercury.picoctf.net:47967/
 
-![source ](https://github.com/ulambayar0511/picoCTFwriteups/blob/main/web/GET_aHEAD/ss/source.png)
+Даалгаварын нэрийг харвал _GET aHEAD_ буюу http request method-той холбоотой байж болох санаа төрсөн.
 
-*Даалгаварын source code-г харвал **GET** хүсэлтээр улаан өнгийг **POST** хүсэлтээр цэнхэр өнгийг сонгож байсан*
+<figure><img src="../../.gitbook/assets/source.png" alt=""><figcaption></figcaption></figure>
 
-- curl -X POST http://mercury.picoctf.net:47967/ үр дүнд цэнхэр өнгө
-- curl -X POST http://mercury.picoctf.net:47967/ үр дүнд улаан өнгө
+_Даалгаварын source code-г харвал **GET** хүсэлтээр улаан өнгийг **POST** хүсэлтээр цэнхэр өнгийг сонгож байсан_
 
-- curl -X PUT,DELETE http://mercury.picoctf.net:47967/ үр дүнд ямар өнгийг харуулсан response ирэхгүй байсан.
+* curl -X POST http://mercury.picoctf.net:47967/ үр дүнд цэнхэр өнгө
+* curl -X POST http://mercury.picoctf.net:47967/ үр дүнд улаан өнгө
+* curl -X PUT,DELETE http://mercury.picoctf.net:47967/ үр дүнд ямар ч өнгийг харуулсан response ирээгүй.
 
-### curl -I http://mercury.picoctf.net:47967/  HEAD request явуулж үзэхэд амжилттай flag-г олсон
+### curl -I http://mercury.picoctf.net:47967/ HEAD request явуулж үзэхэд амжилттай flag-г олсон
 
-![flag ](https://github.com/ulambayar0511/picoCTFwriteups/blob/main/web/GET_aHEAD/ss/flag.png)
+![flag](../../.gitbook/assets/flag.png)
 
-## Дүгнэлт 
+## Дүгнэлт
 
-Энэхүү даалгаварын зорилго http request method харуулах зорилготой байсан
-
-
-
-
-
+Энэхүү даалгаварын зорилго нь http request method-н ялгааг харуулах зорилготой
